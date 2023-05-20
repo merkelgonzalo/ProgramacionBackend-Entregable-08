@@ -41,9 +41,13 @@ router.get('/realTimeProducts', async (req, res) => {
     res.render('realTimeProducts', {products: products});
 });
 
-// router.get('/chat', async (req, res) => { 
-//     const products = await productManager.getProducts();
-//     res.render('home', {products: products});
-// });
+const publicAcces = (req,res,next) =>{
+    // if(req.session.user) return res.redirect('/profile');
+    next();
+}
+
+router.get('/register', publicAcces, (req,res)=>{
+    res.render('register')
+});
 
 export default router;
