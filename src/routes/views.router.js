@@ -92,4 +92,16 @@ router.get('/carts/:cid', async (req, res) => {
     }
 });
 
+const publicAcces = (req,res,next) =>{
+    next();
+}
+
+router.get('/register', publicAcces, (req,res)=>{
+    res.render('register')
+})
+
+router.get('/login', publicAcces, (req,res)=>{
+    res.render('login')
+})
+
 export default router;

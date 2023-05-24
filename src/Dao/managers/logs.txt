@@ -140,3 +140,8 @@ Date: 17/5/2023 - Hour: 09:11:49 - Method: GET all products
 Date: 17/5/2023 - Hour: 18:17:37 - Method: GET all products
 Date: 17/5/2023 - Hour: 18:18:43 - Method: GET all carts
 Date: 17/5/2023 - Hour: 19:24:02 - Method: GET all carts
+Date: 24/5/2023 - Hour: 17:40:22 - Method: GET all products
+Date: 24/5/2023 - Hour: 17:42:04 - Method: POST a product
+Date: 24/5/2023 - Hour: 17:42:09 - Method: GET all products
+Date: 24/5/2023 - Hour: 17:43:45 - Method: GET all products
+Date: 24/5/2023 - Hour: 17:47:16 - Method: GET all products
