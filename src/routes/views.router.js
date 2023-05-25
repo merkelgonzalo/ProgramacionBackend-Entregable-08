@@ -93,23 +93,21 @@ router.get('/carts/:cid', async (req, res) => {
     }
 });
 
-const adminAcces = (req,res,next) =>{
-    console.log(req.session.user.rol);
-    if(req.session.user.rol !== 'admin'){
-        console.log('Only admin access');
-        return res.redirect('/');
-    } 
-    next();
-}
+// const adminAcces = (req,res,next) =>{
+//     console.log(req.session.user.rol);
+//     if(req.session.user.rol !== 'admin'){
+//         console.log('Only admin access');
+//         return res.redirect('/');
+//     } 
+//     next();
+// }
 
-const privateAcces = (req,res,next)=>{
-    if(!req.session.user) return res.redirect('/login');
-    next();
-}
+// const privateAcces = (req,res,next)=>{
+//     if(!req.session.user) return res.redirect('/login');
+//     next();
+// }
 
 const publicAcces = (req,res,next) =>{
-    //const user = req.session.user;
-    //if(req.session.user) return res.redirect('/');
     next();
 }
 

@@ -5,11 +5,11 @@ const router = Router();
 
 router.post('/register', async (req, res) =>{
 
-    const {first_name, last_name, email, age, password, rol} = req.body;
+    const {first_name, last_name, email, age, password} = req.body;
     try{
         const exist = await userModel.findOne({email});
     
-        if(exist){
+        if(exist || email === "adminCoder@coder.com"){
             return res.status(400).send({status:"error", error:"User already exists"});
         }
     
@@ -19,23 +19,35 @@ router.post('/register', async (req, res) =>{
             email,
             age,
             password,
-            rol
+            rol: "user"
         };
     
         const result = await userModel.create(user);
         res.send({status:"succes", message:"User registered"});
 
     }catch(error) {
-        console.log('Cannot get products with mongoose: '+error)
+        console.log('Cannot register with mongoose: '+error)
         res.status(500).send('Internal server error');
     }
 });
 
 router.post('/login', async (req,res)=>{
     const { email, password } = req.body;
+    let user;
 
     try{
-        const user = await userModel.findOne({email,password});
+        
+        if(email === "adminCoder@coder.com" && password === "adminCod3r123"){
+            user = {
+                first_name: 'Administrador',
+                last_name: 'Del Sistema',
+                email: email,
+                age: 99,
+                rol: 'admin'
+            };
+        }else{
+            user = await userModel.findOne({email,password});
+        }
 
         if(!user){
             return res.status(400).send({status:"error", error:"Invalid data"})
@@ -49,7 +61,7 @@ router.post('/login', async (req,res)=>{
         }
         res.send({status:"success", payload:req.session.user, message:"Welcome!"})
     }catch(error) {
-        console.log('Cannot get products with mongoose: '+error)
+        console.log('Cannot login with mongoose: '+error)
         res.status(500).send('Internal server error');
     }
 });

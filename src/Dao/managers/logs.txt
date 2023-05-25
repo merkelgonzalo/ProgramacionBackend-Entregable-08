@@ -196,3 +196,23 @@ Date: 24/5/2023 - Hour: 20:41:16 - Method: GET all products
 Date: 24/5/2023 - Hour: 20:43:06 - Method: GET all products
 Date: 24/5/2023 - Hour: 20:43:38 - Method: Login
 Date: 24/5/2023 - Hour: 20:43:42 - Method: GET all products
+Date: 24/5/2023 - Hour: 20:54:34 - Method: GET all products
+Date: 24/5/2023 - Hour: 20:55:12 - Method: Register
+Date: 24/5/2023 - Hour: 20:55:14 - Method: Login
+Date: 24/5/2023 - Hour: 20:55:18 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:11:58 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:12:08 - Method: Login
+Date: 24/5/2023 - Hour: 21:12:13 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:12:21 - Method: Register
+Date: 24/5/2023 - Hour: 21:12:51 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:12:55 - Method: Register
+Date: 24/5/2023 - Hour: 21:15:56 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:15:59 - Method: Register
+Date: 24/5/2023 - Hour: 21:19:37 - Method: Register
+Date: 24/5/2023 - Hour: 21:19:57 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:21:11 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:21:28 - Method: Register
+Date: 24/5/2023 - Hour: 21:21:48 - Method: Login
+Date: 24/5/2023 - Hour: 21:23:58 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:24:18 - Method: GET all products
+Date: 24/5/2023 - Hour: 21:24:32 - Method: Login

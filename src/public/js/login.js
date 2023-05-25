@@ -19,5 +19,5 @@ form.addEventListener('submit', e =>{
         if(result.status == 200){
             window.location.replace('/');
         }
-    })
-})
+    });
+});
